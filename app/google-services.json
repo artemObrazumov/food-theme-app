@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "642422592685",
+    "project_id": "hackathonfoodtheme",
+    "storage_bucket": "hackathonfoodtheme.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:642422592685:android:42735f50f20102c78ca224",
+        "android_client_info": {
+          "package_name": "com.foodthemeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "642422592685-1slhq676nestpm649q8orve9cq20n4uk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFe7QECntuaFdQ8P8JT-6UPM7v9_4w_ZA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "642422592685-1slhq676nestpm649q8orve9cq20n4uk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

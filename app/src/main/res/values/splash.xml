@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Food.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">#AAA</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/common_google_signin_btn_icon_dark</item>
+        <item name= "postSplashScreenTheme">@style/Theme.FoodThemeApp</item>
+    </style>
+
+</resources>
