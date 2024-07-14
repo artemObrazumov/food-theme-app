@@ -40,7 +40,7 @@ fun AuthorizationScreen(
         ){
             Text(
                 modifier = Modifier.fillMaxWidth(),
-                text = "Добро пожаловать!",
+                text = "Добро пожаловать в JFood!",
                 style = TextStyle(
                     fontSize = 28.sp,
                     fontWeight = FontWeight.Bold
