@@ -34,6 +34,7 @@ class AuthorizationActivity : ComponentActivity() {
 
         if (FoodApp.googleAuthUiClient.getSignedInUser() != null) {
             startActivity(Intent(this@AuthorizationActivity, MainActivity::class.java))
+            overridePendingTransition(0, 0)
         }
 
         setContent {

@@ -2,13 +2,14 @@ package com.foodthemeapp
 
 import android.app.Application
 import com.foodthemeapp.auth.GoogleAuthUiClient
+import com.foodthemeapp.data.Api
 import com.google.android.gms.auth.api.identity.Identity
 
 class FoodApp: Application() {
 
     override fun onCreate() {
         super.onCreate()
-        FoodApp.instance = this
+        instance = this
     }
 
     companion object {
@@ -20,6 +21,9 @@ class FoodApp: Application() {
                 context = instance.applicationContext,
                 oneTapClient = Identity.getSignInClient(instance.applicationContext)
             )
+        }
+        val api by lazy {
+            Api()
         }
     }
 }

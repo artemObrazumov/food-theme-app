@@ -1,7 +1,12 @@
 package com.foodthemeapp.screen.main.products
 
-import com.foodthemeapp.data.models.Product
+import com.foodthemeapp.data.models.ProductWithOrderStatus
 
-data class ProductsScreenState(
-    val products: List<Product>
-)
+sealed class ProductsScreenState {
+    data class Content(
+        val products: List<ProductWithOrderStatus>
+    ): ProductsScreenState()
+    data object Loading: ProductsScreenState()
+    data object Idle: ProductsScreenState()
+}
+

@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.google.gms.google.services)
+    alias(libs.plugins.kotlin.serialization)
 }
 
 android {
@@ -63,6 +64,7 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation ("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.0")
     implementation(libs.androidx.lifecycle.runtime.compose.android)
+    implementation(libs.androidx.compose.animation)
 
     // Splash
     implementation(libs.splashscreen)
@@ -73,6 +75,11 @@ dependencies {
 
     // Coil
     implementation(libs.coil)
+    implementation(libs.androidx.navigation.compose)
+
+    // Serialization
+    implementation(libs.kotlinx.serialization.json)
+    implementation(libs.firebase.database)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
